@@ -1,0 +1,7 @@
+{
+  "name": "midwestern-brand-application",
+  "description": "Midwestern Interactive brand standards for Claude Code",
+  "author": { "name": "Midwestern Interactive" },
+  "version": "1.0.0",
+  "skills": "./skills/"
+}

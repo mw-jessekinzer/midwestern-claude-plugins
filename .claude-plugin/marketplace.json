@@ -1,0 +1,25 @@
+{
+  "name": "midwestern-marketplace",
+  "description": "Midwestern Interactive Claude Code plugins and skills",
+  "owner": {
+    "name": "Midwestern Interactive",
+    "email": "jk@buildmidwestern.com"
+  },
+  "metadata": {
+    "description": "Official plugin marketplace for Midwestern Interactive",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "midwestern-brand-application",
+      "description": "Automatically apply Midwestern Interactive brand standards to any visual or client-facing output created in Claude",
+      "version": "1.0.0",
+      "source": "./plugins/midwestern-brand-application",
+      "author": {
+        "name": "Midwestern Interactive"
+      },
+      "category": "design",
+      "keywords": ["brand", "design-system", "midwestern"]
+    }
+  ]
+}
