@@ -1,0 +1,8 @@
+{
+  "name": "executive-social-manager",
+  "version": "4.0.0",
+  "description": "LinkedIn ghostwriting workflow for up to 10 executives. Multiple entry points: /draft (quick), /react (article response), /qa (polish existing drafts), 3-phase research pipeline (deep-dive). Automated QA pipeline (fact-check + Voice DNA + anti-AI humanization), single human review gate, formatted output.",
+  "author": {
+    "name": "Jesse Kinzer"
+  }
+}

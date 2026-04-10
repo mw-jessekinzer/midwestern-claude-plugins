@@ -1,0 +1,116 @@
+{
+  "skill_name": "workflow-orchestrator",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "mode1-draft-jesse-ai-automation",
+      "prompt": "/draft jesse AI automation for small marketing teams",
+      "expected_output": "Full MODE 1 pipeline: step labels shown, angle options generated, human review gate displayed, final READY TO POST output block with Jesse's voice applied (specific tools named, direct tone, no banned vocabulary)",
+      "files": [],
+      "assertions": [
+        {
+          "id": "step_labels_present",
+          "text": "Output contains all expected MODE 1 step labels: EXECUTIVE LOADED, ANGLE OPTIONS, DRAFT COMPLETE, READY FOR YOUR REVIEW, and READY TO POST"
+        },
+        {
+          "id": "angle_options_shown",
+          "text": "Step 2 shows at least 2 distinct angle options, each with a 'Why it works' or equivalent rationale"
+        },
+        {
+          "id": "human_gate_present",
+          "text": "A human review gate is displayed — READY FOR YOUR REVIEW section or equivalent hard stop prompt before final output"
+        },
+        {
+          "id": "final_output_block_present",
+          "text": "Output contains the final READY TO POST block with word count, emoji count, and scheduling recommendation"
+        },
+        {
+          "id": "no_banned_vocabulary",
+          "text": "Final post does not contain any of these words: game-changing, leveraging, crucial, impactful, utilize, utilization, moreover, furthermore, additionally, revolutionary, transformative, rapidly evolving, unprecedented"
+        },
+        {
+          "id": "jesse_tools_referenced",
+          "text": "Final post mentions at least one specific tool by name relevant to Jesse's stack (Clay, HubSpot, Zapier, Claude, Framer, Jitter, or similar)"
+        },
+        {
+          "id": "no_bullet_lists_in_post",
+          "text": "The final post body (not the metadata block) contains no bulleted or dashed list items — prose only"
+        },
+        {
+          "id": "emoji_count_two_or_fewer",
+          "text": "The final post contains 2 or fewer emojis total"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "mode3-react-ryan-ai-costs",
+      "prompt": "/react ryan\n\nSource text: \"Engineering teams at mid-size companies are spending an average of $800–$1,200 per developer per year on AI coding tools — Copilot, Cursor, Claude, and others. But in a new survey of 400 CTOs, 67% said they couldn't directly tie that spend to measurable productivity gains. Most cited 'developer feel' and 'perceived velocity' as the primary evidence. One CTO said, 'We're basically paying a premium for vibes and hoping it shows up in the output someday.'\"",
+      "expected_output": "MODE 3 pipeline: source ingested, Ryan's POV drafted (not a summary of source), QA pipeline applied, final output block with Ryan's voice (relaxed, direct, fun, specific engineering experience)",
+      "files": [],
+      "assertions": [
+        {
+          "id": "mode3_step_labels_present",
+          "text": "Output contains MODE 3 step labels: EXECUTIVE LOADED, SOURCE INGESTED, and READY TO POST (or equivalent reaction draft + final output labels)"
+        },
+        {
+          "id": "source_ingested_step_shown",
+          "text": "A SOURCE INGESTED step is present that extracts a 1–3 sentence core premise from the input text"
+        },
+        {
+          "id": "ryan_pov_not_summary",
+          "text": "Final post does not contain phrases that indicate source-summarizing: 'according to', 'the survey found', 'a recent study', 'the article says', 'research shows'"
+        },
+        {
+          "id": "no_banned_vocabulary_ryan",
+          "text": "Final post does not contain Ryan's banned vocabulary: driving technical strategy, architecting the future, transformational infrastructure, game-changing, impactful"
+        },
+        {
+          "id": "final_output_block_present",
+          "text": "Output contains the final READY TO POST block with Ryan's name and scheduling recommendation"
+        },
+        {
+          "id": "ryan_voice_practitioner",
+          "text": "Final post contains at least one specific practitioner detail: a real tool name, a specific number/cost figure, or a first-person experience reference"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "mode4-qa-jesse-bad-ai-draft",
+      "prompt": "/qa jesse [AI-sounding draft with: rapidly evolving, leveraging, crucial, impactful, revolutionizing, utilization, unprecedented, fostering, 3 emojis]",
+      "expected_output": "MODE 4 QA pipeline: all 3 passes run, banned AI vocabulary removed, emojis trimmed to 2 or fewer, voice rewritten to match Jesse's direct/practitioner tone",
+      "files": [],
+      "assertions": [
+        {
+          "id": "mode4_step_labels_present",
+          "text": "Output contains MODE 4 step labels: EXECUTIVE LOADED with Voice DNA loaded, and a QA pipeline summary"
+        },
+        {
+          "id": "qa_passes_shown",
+          "text": "Output shows a QA summary referencing at least 2 of the 3 passes (PASS 1 fact check, PASS 2 voice, PASS 3 humanization)"
+        },
+        {
+          "id": "banned_vocab_removed",
+          "text": "Final post does NOT contain any of these words from the original draft: leveraging, crucial, impactful, revolutionizing, utilization, unprecedented, fostering, 'rapidly evolving', 'align with'"
+        },
+        {
+          "id": "emoji_count_reduced",
+          "text": "Final post contains 2 or fewer emojis (original draft had 3: rocket, sparkles, stars)"
+        },
+        {
+          "id": "no_bullet_lists_in_post",
+          "text": "Final post body contains no bulleted or dashed list items — Jesse's Voice DNA requires prose only"
+        },
+        {
+          "id": "final_output_block_present",
+          "text": "Output contains the final READY TO POST block with Jesse's name and word count"
+        },
+        {
+          "id": "jesse_voice_applied",
+          "text": "Final post reads as direct and practitioner-specific — mentions real tools by name OR contains a specific personal observation, not generic marketing language"
+        }
+      ]
+    }
+  ]
+}

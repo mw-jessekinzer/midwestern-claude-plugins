@@ -20,6 +20,17 @@
       },
       "category": "design",
       "keywords": ["brand", "design-system", "midwestern"]
+    },
+    {
+      "name": "executive-social-manager",
+      "description": "LinkedIn ghostwriting workflow for up to 10 executives. Multiple entry points: /draft (quick), /react (article response), /qa (polish existing drafts), 3-phase research pipeline (deep-dive). Automated QA pipeline (fact-check + Voice DNA + anti-AI humanization), single human review gate, formatted output.",
+      "version": "4.0.0",
+      "source": "./plugins/executive-social-manager",
+      "author": {
+        "name": "Jesse Kinzer"
+      },
+      "category": "content",
+      "keywords": ["linkedin", "ghostwriting", "social-media", "executives", "content"]
     }
   ]
 }
